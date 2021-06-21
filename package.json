@@ -1,0 +1,11 @@
+{
+  "name": "motd",
+  "version": "0.1.0",
+  "description": "A small app to display the message of the day.",
+  "main": "index.js",
+  "author": "Daniel Tschumi",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.0.1"
+  }
+}

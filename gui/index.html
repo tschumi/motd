@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MOTD</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="gui/css/motd.min.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <div class="container">
+            <blockquote id="motdQuote" class="blockquote mt-4">
+                <p id="motdQuoteText"></p>
+              </blockquote>
+              <figcaption id="motdQuoteAuthor" class="blockquote-footer"></figcaption>
+        </div>
+      </main>
+    <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container">
+            <div class="progress" style="height: 2px;">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="gui/js/main.js"></script>
+    <script>
+        window.token = '{{ token }}';
+        // Perform background initialization
+        console.log('init from index.html')
+        doAjax("/init", "POST", initHandler);
+    </script>
+</body>
+</html>

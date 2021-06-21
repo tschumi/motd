@@ -1,0 +1,16 @@
+{
+    "motd": [
+        {
+            "quote": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sapiente architecto doloremque animi at eum neque ullam ad saepe a asperiores rerum iusto perspiciatis dicta corporis eos voluptas, commodi ipsum.",
+            "author": "Ferris Bueller"
+        },
+        {
+            "quote": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+            "author": "Captain Tight Pants"
+        },
+        {
+            "quote": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sapiente architecto doloremque animi at eum.",
+            "author": "Claire Elizabeth Beauchamp Fraser"
+        }
+    ]
+}
