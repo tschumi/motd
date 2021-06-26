@@ -2,6 +2,7 @@
 Application stub
 """
 import json
+import os
 
 def initialize():
     config = get_config()
@@ -16,7 +17,8 @@ def initialize():
 
 def get_config():
     try:
-        with open('config.json') as json_file:
+        config_file = os.path.join(os.path.dirname(os.path.abspath( __file__ )), 'config.json')
+        with open(config_file) as json_file:
             data = json.load(json_file)
         return data
     except:
