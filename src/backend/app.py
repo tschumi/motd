@@ -20,7 +20,7 @@ def get_config():
             data = json.load(json_file)
         return data
     except:
-        print("Sorry, no valid config file found..")
+        raise Exception('Sorry, no valid config file found..')
     
 
 def get_motd(motdfile):
@@ -29,4 +29,4 @@ def get_motd(motdfile):
             data = json.load(json_file)
         return data
     except:
-        print("Sorry, no valid motd file found..")
+        raise Exception('Sorry, no valid motd file found..')
