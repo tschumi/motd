@@ -1,7 +1,7 @@
 node_modules/
 build/
 dist/
-main.spec
 __pycache__/
 *.py[cod]
 *$py.class
+motd.spec
