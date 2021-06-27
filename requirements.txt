@@ -1,0 +1,10 @@
+click==8.0.1
+Flask==2.0.1
+itsdangerous==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+pyobjc-core==7.3
+pyobjc-framework-Cocoa==7.3
+pyobjc-framework-WebKit==7.3
+pywebview==3.4
+Werkzeug==2.0.1
