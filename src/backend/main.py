@@ -12,5 +12,6 @@ if __name__ == '__main__':
 
     stream = StringIO()
     with redirect_stdout(stream):
-        window = webview.create_window('motd', server, width=600, height=130, hidden=1)
+        window = webview.create_window(
+            'motd', server, width=600, height=130, on_top=1, hidden=1)
         webview.start(debug=True)
