@@ -1,7 +1,6 @@
 import json
 import os
 import time
-import webbrowser
 from functools import wraps
 
 from flask import Flask, render_template, jsonify, request
@@ -55,18 +54,7 @@ def initialize():
     '''
     receive = app.initialize()
 
-    if receive:
-        response = receive
-    else:
-        response = {
-            "content": {
-                "quote": "No valid motd found.. go check it!",
-                "author": "motd"
-            },
-            "speed": 0.8,
-        }
-
-    return jsonify(response)
+    return jsonify(receive)
 
 
 @server.route('/window/resize', methods=['POST'])
@@ -74,7 +62,7 @@ def initialize():
 def resize_window():
     window = webview.windows[0]
     motd_height = request.json['motd_height']
-    
+
     window.resize(window.width, 130 + motd_height)
     window.show()
 
