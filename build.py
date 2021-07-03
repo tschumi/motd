@@ -20,11 +20,11 @@ if os == "Darwin":
     ])
 
 if os == "Windows":
-        PyInstaller.__main__.run([
-            'src/backend/main.py',
-            '--name=motd',
-            '--icon=src/assets/icons/win/icon.ico',
-            '--onefile',
-            '--windowed',
-            '--add-data=gui:gui'
-        ])
+    PyInstaller.__main__.run([
+        'src/backend/main.py',
+        '--name=motd',
+        '--icon=src/assets/icons/win/icon.ico',
+        '--onefile',
+        '--windowed',
+        '--add-data=gui;gui'
+    ])
