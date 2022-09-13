@@ -1,0 +1,2 @@
+motdfilepath = "/path/to/the/motd.json"
+speed = 1.5

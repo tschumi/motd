@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>motd</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <div class="container">
+            <blockquote id="motdQuote" class="blockquote mt-4">
+                <p id="motdQuoteText"></p>
+                </blockquote>
+                <figcaption id="motdQuoteAuthor" class="blockquote-footer"></figcaption>
+        </div>
+        </main>
+    <footer id="footer" class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container">
+            <div id="progress" class="progress" style="height: 2px;">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 100%;"></div>
+            </div>
+        </div>
+    </footer>
+<script src="./src/main.js" type="module"></script>
+</body>
+</html>
